@@ -5,25 +5,24 @@ export const GlobalStyle = createGlobalStyle`
     --gradient: linear-gradient(180deg, #FD391E 20%, #FF553E 80%);
     
     --primary: #FD391E;
-    --secondary: #CA0125;
+    --secondary: #872518;
     
     --title: #35323D;
     --paragraph: #737284;
     
     --white: #FFFFFF;
-    --gray-50: #F1F1F1;
-    --gray-100: #C0C0C0;
+    --gray-50: #D7D5D5;
+    --gray-100: #A7A7A7;
     }
     
     ::-webkit-scrollbar {
-        width: 1rem;
+        width: 14px;
     }
-    ::-webkit-scrollbar-track {
-        background: var(--gray-50);
-    }
+
     ::-webkit-scrollbar-thumb {
-        background: var(--gray-100);
-        border-radius: .25rem;
+        background: var(--gray-50);
+        border-radius: 1rem;
+        filter: blur(0.5)
     }
 
     * {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   background-color: var(--primary);
-  padding: 0.5rem;
+  padding: .5rem 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,14 +16,29 @@ export const Nav = styled.nav`
   width: 100%;
   max-width: 1144px;
   height: 2rem;
-  padding: 0 20px;
+
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--white);
 
   .logo {
-    padding: 15px 0;
+    padding: 1rem 0;
+  }
+
+  li.action {
+    margin-left: 1rem;
+
+    border: 1px solid;
+    border-radius: 0 0 1rem 1rem;
+    border-top: none;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--secondary)
+    }
   }
 `;
 

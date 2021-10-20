@@ -6,7 +6,6 @@ export const Container = styled.div`
   > div {
     display: flex;
     align-items: center;
-    /* min-height: 100vh; */
 
     section {
       flex: 1;
@@ -24,13 +23,14 @@ export const Container = styled.div`
         font-weight: 400;
         font-size: 1.5rem;
         line-height: 2rem;
-        color: var(--gray-50);
+        color: var(--white);
+        margin-bottom: 2rem;
       }
     }
 
     div {
       flex: 1;
-      transform: translateY(15px);
+      transform: translateY(4rem);
     }
   }
 `;

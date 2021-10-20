@@ -41,11 +41,11 @@ export function RightNav({ open }: any) {
           offset={-70}
           duration={500}
         >
-          <a>Preço</a>
+          <a>Preços</a>
         </Link>
       </li>
 
-      <li>
+      <li className="action">
         <Link
           activeClass="active"
           to="header"

@@ -1,18 +1,13 @@
-import React from "react";
-import Head from "next/head";
+import { useEffect } from "react";
+import Router from "next/router";
 
-import { Header } from "../components/Header";
-import { Navbar } from "../components/Navbar/Navbar";
+export default function Loading() {
+  useEffect(() => {
+    const { pathname } = Router;
+    if (pathname == "/") {
+      Router.push("/home");
+    }
+  });
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Tucan Bird</title>
-      </Head>
-      <Navbar />
-      <Header />
-
-    </>
-  );
+  return <h1>carregando ...</h1>;
 }
