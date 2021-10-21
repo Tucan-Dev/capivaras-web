@@ -43,3 +43,12 @@ export const ButtonCallToAction = styled.button`
     transform: scale(1.1);
   }
 `;
+
+export const Splash = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background: var(--primary);
+`;

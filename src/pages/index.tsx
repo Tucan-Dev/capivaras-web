@@ -1,13 +1,25 @@
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Router from "next/router";
 
+import { Splash } from "../styles/commonStyles";
+import { PulseLoader } from "react-spinners";
+
 export default function Loading() {
+  let [loading, setLoading] = useState(true);
+  let [color, setColor] = useState("#872518");
+
   useEffect(() => {
     const { pathname } = Router;
-    if (pathname == "/") {
+    if (pathname === "/") {
+      setLoading(false);
+
       Router.push("/home");
     }
   });
 
-  return <h1>carregando ...</h1>;
+  return (
+    <Splash>
+      <PulseLoader color={color} loading={loading} size={20} margin={25} />
+    </Splash>
+  );
 }

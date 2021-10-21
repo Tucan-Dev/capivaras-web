@@ -9,7 +9,7 @@ export function RightNav({ open }: any) {
       <li>
         <Link
           activeClass="active"
-          to="header"
+          to="home"
           spy={true}
           smooth={true}
           offset={-70}
@@ -22,7 +22,7 @@ export function RightNav({ open }: any) {
       <li>
         <Link
           activeClass="active"
-          to="header"
+          to="recursos"
           spy={true}
           smooth={true}
           offset={-70}

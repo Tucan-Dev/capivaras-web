@@ -16,12 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     ::-webkit-scrollbar {
-        width: 14px;
+        width: 10px;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--gray-50);
-        border-radius: 1rem;
+        background: var(--primary);
         filter: blur(0.5)
     }
 

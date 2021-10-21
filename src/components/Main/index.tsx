@@ -13,7 +13,7 @@ import ImgCelular from "../../assets/images/celular.svg";
 
 export function Main() {
   return (
-    <ContainerDefault>
+    <ContainerDefault id="recursos">
       <Title title="Tudo o que você precisa para fazer seu delivery crescer" />
 
       <Content>
