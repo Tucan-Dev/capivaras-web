@@ -52,3 +52,30 @@ export const Splash = styled.div`
   min-height: 100vh;
   background: var(--primary);
 `;
+
+export const ButtonCard = styled.button`
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--primary);
+
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 1rem 2rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+`;
