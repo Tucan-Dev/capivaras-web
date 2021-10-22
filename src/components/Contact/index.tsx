@@ -38,7 +38,7 @@ export function Contact() {
   const onSubmit = (data: IFormInputs) => console.log(data);
 
   return (
-    <ContainerDefault>
+    <ContainerDefault id="contact">
       <Title title="Alguma dúvida? Mande uma mensagem para nós!" />
 
       <Container>

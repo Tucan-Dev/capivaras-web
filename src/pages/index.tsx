@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from "react";
-import Router from "next/router";
+import React from "react";
+import Head from "next/head";
 
-import { Splash } from "../styles/commonStyles";
-import { PulseLoader } from "react-spinners";
+import { Navbar } from "../components/Navbar/Navbar";
+import { Main } from "../components/Main";
+import { About } from "../components/About";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { Price } from "../components/Prices";
 
-export default function Loading() {
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#fff");
+import { Container } from "../styles/home.styles";
 
-  useEffect(() => {
-    const { pathname } = Router;
-    if (pathname === "/") {
-      setLoading(false);
-
-      Router.push("/home");
-    }
-  });
-
+export default function Home() {
   return (
-    <Splash>
-      <PulseLoader color={color} loading={loading} size={20} margin={25} />
-    </Splash>
+    <Container>
+      <Head>
+        <title>Tucan Bird</title>
+      </Head>
+      <Navbar />
+      <Header />
+      <Main />
+      <About />
+      <Price />
+      <Contact />
+      <Footer />
+    </Container>
   );
 }

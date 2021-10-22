@@ -12,7 +12,7 @@ import { CardPrice, ContainerCard } from "./styles";
 
 export function Price() {
   return (
-    <ContainerDefault>
+    <ContainerDefault id="preco">
       <Title title="Nossos preços são incrivelmente acessíveis" />
 
       <ContainerCard>

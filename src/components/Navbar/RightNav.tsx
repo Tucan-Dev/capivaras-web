@@ -35,7 +35,7 @@ export function RightNav({ open }: any) {
       <li>
         <Link
           activeClass="active"
-          to="header"
+          to="preco"
           spy={true}
           smooth={true}
           offset={-70}
@@ -48,7 +48,7 @@ export function RightNav({ open }: any) {
       <li className="action">
         <Link
           activeClass="active"
-          to="header"
+          to="contact"
           spy={true}
           smooth={true}
           offset={-70}
