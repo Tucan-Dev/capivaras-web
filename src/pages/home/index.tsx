@@ -8,6 +8,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import { Container } from "./styles";
 import { About } from "../../components/About";
 import { Price } from "../../components/Prices";
+import { Contact } from "../../components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Main />
       <About />
       <Price />
+      <Contact />
     </Container>
   );
 }

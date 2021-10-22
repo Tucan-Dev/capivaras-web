@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     
     --primary: #FD391E;
     --secondary: #872518;
+
+    --danger: #FF3737;
     
     --title: #35323D;
     --paragraph: #737284;
