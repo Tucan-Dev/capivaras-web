@@ -6,7 +6,7 @@ import { PulseLoader } from "react-spinners";
 
 export default function Loading() {
   let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#872518");
+  let [color, setColor] = useState("#fff");
 
   useEffect(() => {
     const { pathname } = Router;
