@@ -38,16 +38,16 @@ export function Price() {
             </ul>
 
             <section>
-              <Link href="/">
-                <a>
-                  <span>
-                    R$ <strong>79,</strong>99
-                  </span>
-                </a>
-              </Link>
+              <span>
+                R$ <strong>79,</strong>99
+              </span>
             </section>
 
-            <ButtonCard>Comprar</ButtonCard>
+            <Link href="https://wa.me/559293129358?text=Olá,%20eu%20tenho%20interesse%20em%20contratar%20o%20PLANO%20BRONZE">
+              <a target="_blank">
+                <ButtonCard>Contratar</ButtonCard>
+              </a>
+            </Link>
           </CardPrice>
 
           <CardPrice>
@@ -63,16 +63,16 @@ export function Price() {
             </ul>
 
             <section>
-              <Link href="/">
-                <a>
-                  <span>
-                    R$ <strong>99,</strong>99
-                  </span>
-                </a>
-              </Link>
+              <span>
+                R$ <strong>99,</strong>99
+              </span>
             </section>
 
-            <ButtonCard>Comprar</ButtonCard>
+            <Link href="https://wa.me/559293129358?text=Olá,%20eu%20tenho%20interesse%20em%20contratar%20o%20PLANO%20PRATA">
+              <a target="_blank">
+                <ButtonCard>Contratar</ButtonCard>
+              </a>
+            </Link>
           </CardPrice>
 
           <CardPrice>
@@ -88,16 +88,16 @@ export function Price() {
             </ul>
 
             <section>
-              <Link href="/">
-                <a>
-                  <span>
-                    R$ <strong>119,</strong>99
-                  </span>
-                </a>
-              </Link>
+              <span>
+                R$ <strong>119,</strong>99
+              </span>
             </section>
 
-            <ButtonCard>Comprar</ButtonCard>
+            <Link href="https://wa.me/559293129358?text=Olá,%20eu%20tenho%20interesse%20em%20contratar%20o%20PLANO%20OURO">
+              <a target="_blank">
+                <ButtonCard>Contratar</ButtonCard>
+              </a>
+            </Link>
           </CardPrice>
         </Fade>
       </ContainerCard>
