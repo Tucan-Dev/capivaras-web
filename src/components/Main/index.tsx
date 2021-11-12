@@ -25,12 +25,12 @@ export function Main() {
         />
 
         <div className="text">
-          <h1>Cardápio online</h1>
-          <p>- Facilite e agilize a escolha do seu pedido</p>
-          <p>- Reduza erros no atendimento </p>
-          <p>- Altere as informações do seu cardápio a qualquer momento </p>
+          <h1>Sistema de gestão completo</h1>
+          <p>- Painel de pedidos centralizadoo</p>
+          <p>- Cadastro de clientes com múltiplos telefones e endereços.</p>
+          <p>- Impressão do pedido por entrega, retirada ou consumo local.</p>
           <p>
-            - Crie itens por dia/horário, adicionais, cupons de desconto, etc...
+            - Filtro de pedidos por status, data, bairro e forma de pagamento.
           </p>
         </div>
       </Content>
@@ -48,7 +48,7 @@ export function Main() {
           <p>- Cadastre seu estabelecimento para ser visto.</p>
           <p>
             - Cadastre seus produtos informe seus horários de atendimento,
-            defina as taxas de entrega e formas de pagamento aceitas.{" "}
+            defina as taxas de entrega e formas de pagamento aceitas.
           </p>
         </div>
       </Content>

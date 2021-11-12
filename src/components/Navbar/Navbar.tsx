@@ -9,7 +9,7 @@ export function Navbar() {
     <Container>
       <Nav id="navbar">
         {/* <Image src={logo} alt="Logotipo Tucadev" width={30} height={60} /> */}
-        <span className="logo">Tucan Bird Delivery</span>
+        <span className="logo">Capivaras Delivery</span>
         <Burger />
       </Nav>
     </Container>

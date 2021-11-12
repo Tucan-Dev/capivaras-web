@@ -12,6 +12,10 @@ export const CardPrice = styled.div`
   border-radius: 1rem;
   padding: 1.5rem;
 
+  .disabled {
+    color: var(--gray-50);
+  }
+
   > div {
     margin: 0 auto;
     width: 100%;

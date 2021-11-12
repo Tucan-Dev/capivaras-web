@@ -15,8 +15,10 @@ export function Header() {
     <Container id="home">
       <ContainerDefault>
         <section>
-          <h1>A Plataforma completa para gestão do seu delivery</h1>
-          <p>Modernize seu atendimento com a integração ao whatsapp</p>
+          <h1>
+            O sistema completo para o controle e atendimento do seu delivery
+          </h1>
+          <p>Modernize seu atendimento com o nosso sistema</p>
 
           <ButtonCallToAction>
             <Link

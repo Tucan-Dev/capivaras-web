@@ -25,20 +25,20 @@ export function Price() {
             width={65}
           />
 
-          <h2>Plano Capivara Ferro</h2>
+          <h2>Plano Bronze</h2>
 
           <ul>
-            <li>Pedidos Online</li>
-            <li>Receba via whatsapp</li>
-            <li>Taxa de entrega</li>
-            <li>Produtos ilimitados</li>
+            <li>Gestão de pedidos</li>
+            <li>Relatórios de vendas</li>
+            <li>Atendimento automatizado</li>
+            <li className="disabled">Chatbot de atendimento no whatsapp</li>
+            <li className="disabled">Múltiplos atendentes</li>
           </ul>
 
           <section>
             <span>
               R$ <strong>79,</strong>99
             </span>
-            <p>mensal</p>
           </section>
 
           <ButtonCard>Comprar</ButtonCard>
@@ -47,20 +47,20 @@ export function Price() {
         <CardPrice>
           <Image src={ImgSilver} alt="" height={62} width={65} />
 
-          <h2>Plano Capivara Prata</h2>
+          <h2>Plano Prata</h2>
 
           <ul>
-            <li>Pedidos Online</li>
-            <li>Receba via whatsapp</li>
-            <li>Taxa de entrega</li>
-            <li>Produtos ilimitados</li>
+            <li>Gestão de pedidos</li>
+            <li>Relatórios de vendas</li>
+            <li>Atendimento automatizado</li>
+            <li>Chatbot de atendimento no whatsapp</li>
+            <li className="disabled">Múltiplos atendentes</li>
           </ul>
 
           <section>
             <span>
               R$ <strong>149,</strong>99
             </span>
-            <p>trimensal</p>
           </section>
 
           <ButtonCard>Comprar</ButtonCard>
@@ -69,21 +69,20 @@ export function Price() {
         <CardPrice>
           <Image src={ImgGold} alt="" height={62} width={65} />
 
-          <h2>Plano Capivara Ouro</h2>
+          <h2>Plano Ouro</h2>
 
           <ul>
-            <li>Pedidos Online</li>
-            <li>Receba via whatsapp</li>
-            <li>Taxa de entrega</li>
-            <li>Produtos ilimitados</li>
+            <li>Gestão de pedidos</li>
+            <li>Relatórios de vendas</li>
+            <li>Atendimento automatizado</li>
+            <li>Chatbot de atendimento no whatsapp</li>
+            <li>Múltiplos atendentes</li>
           </ul>
 
           <section>
             <span>
               R$ <strong>499,</strong>99
             </span>
-
-            <p>anual</p>
           </section>
 
           <ButtonCard>Comprar</ButtonCard>

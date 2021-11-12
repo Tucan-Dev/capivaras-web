@@ -20,12 +20,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     ::-webkit-scrollbar {
-        width: 10px;
+        width: .5rem;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--primary);
-        filter: blur(0.5)
+        background: var(--gray-100);
     }
 
     * {

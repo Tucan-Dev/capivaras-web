@@ -11,16 +11,15 @@ export function About() {
     <Container>
       <ContainerDefault>
         <section>
-          <h1>Seu cliente atendido em segundos</h1>
+          <h1>Atendimento automatizado no whatsapp</h1>
+          <p>Não deixe seus clientes esperando!!!</p>
           <p>
-            Nosso sistema automatiza o seu WhatsApp e cuida do atendimento do
-            início ao fim.
+            Automatize seu atendimento com nossa solução de integração com
+            whatsapp.
           </p>
           <p>
-            Seu cliente é atendido em segundos, nosso sistema automático
-            responde às principais dúvidas, informa todo o andamento do pedido
-            pelo WhatsApp e finaliza a conversa pedindo uma avaliação do seu
-            serviço.{" "}
+            Nosso sistema responde seus clientes em tempo real e envia o pedido
+            direto para o painel de pedidos.
           </p>
         </section>
         <Image src={ImgRobot} alt="ChatBot" width={370} height={430} />
