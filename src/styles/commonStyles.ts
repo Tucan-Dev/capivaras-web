@@ -25,6 +25,14 @@ export const TitleContent = styled.div`
     font-size: 2rem;
     font-weight: 700;
   }
+
+  @media (max-width: 426px) {
+    h1 {
+      color: var(--title);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
 `;
 export const ButtonCallToAction = styled.button`
   background: transparent;

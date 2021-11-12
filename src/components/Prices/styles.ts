@@ -4,11 +4,17 @@ export const ContainerCard = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+
+  @media (max-width: 426px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 `;
 
 export const CardPrice = styled.div`
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   border-radius: 1rem;
   padding: 1.5rem;
 
@@ -50,19 +56,19 @@ export const CardPrice = styled.div`
   section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
+    align-items: flex-start;
+    margin: 2rem 0 3rem;
 
     span {
       font-family: Roboto, sans-serif;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 1.2rem;
       color: var(--title);
 
       strong {
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 2rem;
       }
     }

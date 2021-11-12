@@ -15,8 +15,9 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>Tucan Bird</title>
+        <title>Capivaras Delivery</title>
       </Head>
+
       <Navbar />
       <Header />
       <Main />
@@ -24,6 +25,7 @@ export default function Home() {
       <Price />
       <Contact />
       <Footer />
+      
     </Container>
   );
 }

@@ -11,6 +11,7 @@ import { Title } from "../Title";
 
 import ImgContact from "../../assets/images/contact.svg";
 import { Container } from "./styles";
+import { Fade, Slide } from "react-awesome-reveal";
 
 interface IFormInputs {
   name: string;
@@ -41,34 +42,36 @@ export function Contact() {
     <ContainerDefault id="contact">
       <Title title="Alguma dúvida? Mande uma mensagem para nós!" />
 
-      <Container>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div>
-            <label>Nome</label>
-            <input {...register("name")} placeholder="Nome completo" />
-            <p>{errors.name?.message}</p>
-          </div>
+      <Fade delay={100}>
+        <Container>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+              <label>Nome</label>
+              <input {...register("name")} placeholder="Nome completo" />
+              <p>{errors.name?.message}</p>
+            </div>
 
-          <div>
-            <label>E-mail</label>
-            <input {...register("email")} placeholder="Seu melhor e-mail" />
-            <p>{errors.email?.message}</p>
-          </div>
+            <div>
+              <label>E-mail</label>
+              <input {...register("email")} placeholder="Seu melhor e-mail" />
+              <p>{errors.email?.message}</p>
+            </div>
 
-          <div>
-            <label>Messagem</label>
-            <textarea
-              rows={10}
-              {...register("message")}
-              placeholder="Digite sua mensagem aqui"
-            />
-          </div>
+            <div>
+              <label>Messagem</label>
+              <textarea
+                rows={10}
+                {...register("message")}
+                placeholder="Digite sua mensagem aqui"
+              />
+            </div>
 
-          <button>Enviar</button>
-        </form>
+            <button>Enviar</button>
+          </form>
 
-        <Image src={ImgContact} width={570} height={460} alt="Contato" />
-      </Container>
+          <Image src={ImgContact} width={570} height={460} alt="Contato" />
+        </Container>
+      </Fade>
     </ContainerDefault>
   );
 }

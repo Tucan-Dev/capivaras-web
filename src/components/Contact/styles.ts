@@ -21,6 +21,7 @@ export const Container = styled.div`
         font-weight: 500;
         color: var(--paragraph);
         margin-bottom: 0.5rem;
+        margin-left: 1rem;
       }
 
       input {
@@ -32,7 +33,7 @@ export const Container = styled.div`
         padding: 0.5rem 1rem;
 
         border: 1px solid var(--paragraph);
-        border-radius: 0.5rem;
+        border-radius: 1rem;
       }
 
       p {
@@ -48,7 +49,7 @@ export const Container = styled.div`
       height: 3rem;
 
       border: none;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
 
       background-color: var(--primary);
       color: var(--white);
@@ -62,5 +63,12 @@ export const Container = styled.div`
         filter: brightness(0.9);
       }
     }
+  }
+
+  @media (max-width: 426px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
   }
 `;

@@ -4,6 +4,7 @@ import { ContainerDefault, TitleContent } from "../../styles/commonStyles";
 interface TitleProps {
   title: string;
 }
+
 export function Title({ title }: TitleProps) {
   return (
     <ContainerDefault>

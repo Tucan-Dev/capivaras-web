@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <Container>
       <ContainerDefault>
-          <small>Capivaras Delivery - Todos direitos reservados &copy;</small>
+          <small>Capivaras Delivery 2021 &copy; Todos direitos reservados</small>
       </ContainerDefault>
     </Container>
   );
