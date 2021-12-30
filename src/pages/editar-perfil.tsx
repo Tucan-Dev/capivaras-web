@@ -2,13 +2,13 @@ import Link from "next/link";
 import { Dashboard } from "../components/Layout/dashboard";
 import { ButtonLink, ContentDefault, TitlePage } from "../styles/commonStyles";
 
-export default function Support() {
+export default function EditProfile() {
   return (
-    <Dashboard title="Suporte">
+    <Dashboard title="Editar">
       <ContentDefault>
         <TitlePage>
-          <h1>Suporte</h1>
-          <p>Entre em contato com a gente se existir qualquer dúvida</p>
+          <h1>Editar</h1>
+          <p>Atualize seus dados</p>
         </TitlePage>
         <main>formulário de edição</main>
         <footer>

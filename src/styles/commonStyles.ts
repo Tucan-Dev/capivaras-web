@@ -87,3 +87,66 @@ export const ButtonCard = styled.button`
     filter: brightness(0.9);
   }
 `;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const ContentDefault = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+`;
+
+export const TitlePage = styled.header`
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--title);
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--paragraph);
+  }
+`;
+
+interface ButtonProps {
+  typeButton?: string;
+}
+
+export const ButtonLink = styled.div<ButtonProps>`
+  min-width: 200px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.8rem 1rem;
+    background-color: ${(props) =>
+      "var(--" + props.typeButton + ")" || "var(--success)"};
+    border: 0;
+    border-radius: 1rem;
+
+    color: var(--white);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+`;

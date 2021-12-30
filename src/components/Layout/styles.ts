@@ -85,3 +85,17 @@ export const Content = styled.div`
     }
   }
 `;
+
+export const ContentPage = styled.div`
+  margin: 0 auto;
+  max-width: 1400px;
+
+  width: 100%;
+  min-height: 50vh;
+
+  padding: 2rem;
+
+  background: var(--white);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+`;

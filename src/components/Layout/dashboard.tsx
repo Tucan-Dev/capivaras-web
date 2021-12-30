@@ -1,9 +1,18 @@
+import Head from "next/head";
 import Link from "next/link";
-import { Container, Content } from "./styles";
+import { Container, Content, ContentPage } from "./styles";
 
-export function Dashboard({ children }: any) {
+interface DashboardProps {
+  title?: string;
+  children: any;
+}
+
+export function Dashboard({ children, title }: DashboardProps) {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <Container>
         <Content>
           <div className="titles">
@@ -69,7 +78,7 @@ export function Dashboard({ children }: any) {
           </li>
         </ul>
       </Content>
-      <Content>{children}</Content>
+      <ContentPage>{children}</ContentPage>
     </>
   );
 }

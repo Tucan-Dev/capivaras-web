@@ -8,6 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     --secondary: #872518;
 
     --danger: #FF3737;
+    --success: #1AC75F;
+    --alert: #FF9900;
+    --info: #29A5FF;
     
     --title: #35323D;
     --paragraph: #737284;
