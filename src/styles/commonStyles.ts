@@ -37,7 +37,7 @@ export const TitleContent = styled.div`
 export const ButtonCallToAction = styled.button`
   background: transparent;
   border: 1px solid var(--white);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 
   padding: 0.5rem 1rem;
 
@@ -63,7 +63,7 @@ export const Splash = styled.div`
 
 export const ButtonCard = styled.button`
   border: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: var(--primary);
 
   color: var(--white);

@@ -33,7 +33,7 @@ export const Container = styled.div`
         padding: 0.5rem 1rem;
 
         border: 1px solid var(--paragraph);
-        border-radius: 1rem;
+        border-radius: 0.5rem;
       }
 
       p {
@@ -49,7 +49,7 @@ export const Container = styled.div`
       height: 3rem;
 
       border: none;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
 
       background-color: var(--primary);
       color: var(--white);

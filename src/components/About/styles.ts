@@ -14,14 +14,14 @@ export const Container = styled.div`
       h1 {
         color: var(--white);
 
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 2rem;
       }
 
       p {
         color: var(--gray-50);
 
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
         line-height: 2rem;
         margin-bottom: 2rem;

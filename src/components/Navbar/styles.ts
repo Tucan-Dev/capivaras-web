@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Nav = styled.nav`
   width: 100%;
   max-width: 1144px;
-  height: 2rem;
+  height: 3rem;
 
   padding: 0 1rem;
   display: flex;

@@ -1,21 +1,17 @@
 import Image from "next/image";
-import {
-  ButtonCallToAction,
-  ContainerDefault,
-} from "../../styles/commonStyles";
+import { ButtonCallToAction } from "../../styles/commonStyles";
 
 import { Container } from "./styles";
 
-import ImgBackground from "../../assets/images/barraHeader.svg";
+import ImgHeader from "../../assets/images/header.svg";
 
 import React from "react";
 import { Link } from "react-scroll";
-import { Slide } from "react-awesome-reveal";
 
 export function Header() {
   return (
     <Container id="home">
-      <ContainerDefault>
+      <div className="content">
         <section>
           <h1>
             O sistema completo para o controle e atendimento do seu delivery
@@ -37,21 +33,12 @@ export function Header() {
         </section>
 
         <Image
-          className="background"
-          src="/modelo.png"
+          src={ImgHeader}
           alt="Picture of the author"
           objectFit="cover"
-          width={1600}
-          height={1400}
+          layout="responsive"
         />
-      </ContainerDefault>
-
-      <Image
-        src={ImgBackground}
-        alt="Picture of the author"
-        layout="responsive"
-        objectFit="cover"
-      />
+      </div>
     </Container>
   );
 }
