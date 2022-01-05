@@ -45,10 +45,6 @@ export default function Company() {
               <h2>R. Francisco Fiuza</h2>
             </div>
             <div className="info">
-              <h1>Número do local:</h1>
-              <h2>3848</h2>
-            </div>
-            <div className="info">
               <h1>Cidade:</h1>
               <h2>Parintins</h2>
             </div>
