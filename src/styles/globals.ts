@@ -37,6 +37,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html {
+        min-width: 1124px;
+
         @media(max-width: 1024px) {
             font-size: 93.75%; //15px
         }

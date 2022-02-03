@@ -64,11 +64,13 @@ export default function EditCompany() {
                 <input {...register("name_company")} />
                 <p>{errors.name_company?.message}</p>
               </div>
+
               <div>
                 <label>Telefone 01</label>
                 <input {...register("contact_one")} />
                 <p>{errors.contact_one?.message}</p>
               </div>
+
               <div>
                 <label>Telefone 02</label>
                 <input {...register("contact_two")} />
