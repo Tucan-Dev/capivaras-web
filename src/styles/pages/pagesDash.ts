@@ -66,10 +66,11 @@ export const Cards = styled.main`
 export const Form = styled.form`
   padding: 1rem 0;
   width: 100%;
-
+  max-width: 550px;
+  /* 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 4rem;
+  column-gap: 4rem; */
 
   .flex {
     display: flex;

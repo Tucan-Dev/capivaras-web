@@ -29,7 +29,7 @@ export function Dashboard({ children, title }: DashboardProps) {
       <Content>
         <ul>
           <li>
-            <Link href="/empresa">
+            <Link href="/dashboard/empresa">
               <a>
                 <i className="ri-store-fill ri-2x" />
                 Empresa
@@ -37,7 +37,7 @@ export function Dashboard({ children, title }: DashboardProps) {
             </Link>
           </li>
           <li>
-            <Link href="/sistema">
+            <Link href="/dashboard/sistema">
               <a>
                 <i className="ri-download-cloud-2-fill ri-2x" />
                 Sistema
@@ -45,7 +45,7 @@ export function Dashboard({ children, title }: DashboardProps) {
             </Link>
           </li>
           <li>
-            <Link href="/plano">
+            <Link href="/dashboard/plano">
               <a>
                 <i className="ri-money-dollar-circle-fill ri-2x" />
                 Plano
@@ -53,7 +53,7 @@ export function Dashboard({ children, title }: DashboardProps) {
             </Link>
           </li>
           <li>
-            <Link href="/relatorio">
+            <Link href="/dashboard/relatorio">
               <a>
                 <i className="ri-booklet-fill ri-2x" />
                 Relatórios
@@ -61,7 +61,7 @@ export function Dashboard({ children, title }: DashboardProps) {
             </Link>
           </li>
           <li>
-            <Link href="/suporte">
+            <Link href="/dashboard/suporte">
               <a>
                 <i className="ri-customer-service-2-fill ri-2x" />
                 Suporte
@@ -69,7 +69,7 @@ export function Dashboard({ children, title }: DashboardProps) {
             </Link>
           </li>
           <li>
-            <Link href="/configuracoes">
+            <Link href="/dashboard/perfil">
               <a>
                 <i className="ri-settings-fill ri-2x" />
                 Configurações
