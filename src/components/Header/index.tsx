@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ButtonCallToAction } from "../../styles/commonStyles";
 
 import { Container } from "./styles";
 
@@ -12,7 +11,7 @@ export function Header() {
   return (
     <Container id="home">
       <div className="content">
-        <div>
+        <div className="image">
           <Image
             src={ImgHeader}
             alt="Picture of the author"

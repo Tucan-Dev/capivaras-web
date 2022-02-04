@@ -14,8 +14,13 @@ export const Container = styled.div`
 
   @media (max-width: 426px) {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    margin: 2rem auto 0;
+    max-width: 1144px;
+
+    > div.image {
+      display: none;
+    }
   }
 `;

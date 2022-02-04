@@ -55,46 +55,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    div.content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      max-width: 1144px;
-      width: 100%;
-      padding: 1rem;
-      margin: 0 auto;
-      margin-top: 4rem;
-
-      section {
-        flex: 1;
-
-        h1 {
-          font-weight: 700;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          color: var(--white);
-
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-weight: 400;
-          font-size: 1rem;
-          line-height: 1rem;
-          color: var(--white);
-          margin-bottom: 2rem;
-        }
-      }
-
-      div {
-        flex: 1;
-        transform: translateY(3rem);
-      }
-    }
-  }
-
   @media (max-width: 568px) {
     div.content {
       display: flex;
@@ -102,36 +62,54 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
 
-      max-width: 1144px;
       width: 100%;
-      padding: 1rem;
-      margin: 0 auto;
-      margin-top: 24rem;
+      max-width: 700px;
+
+      margin: 5rem auto 2rem;
+
+      > div.image {
+        display: none;
+      }
 
       section {
         flex: 1;
 
+        margin-right: 0;
+        margin-left: 0;
+
+        text-align: center;
+
         h1 {
           font-weight: 700;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          color: var(--white);
+          font-size: 3rem;
+
+          color: var(--title);
 
           margin-bottom: 1rem;
         }
 
         p {
-          font-weight: 400;
-          font-size: 1rem;
-          line-height: 1rem;
-          color: var(--white);
+          font-weight: 300;
+          font-size: 1.8rem;
+          color: var(--paragraph);
+
           margin-bottom: 2rem;
         }
-      }
 
-      div {
-        flex: 1;
-        transform: translateY(3rem);
+        a {
+          cursor: pointer;
+
+          display: inline-block;
+          background: var(--primary);
+          color: var(--white);
+
+          font-weight: 500;
+          font-size: 1rem;
+          letter-spacing: 1px;
+
+          padding: 0.75rem 2rem;
+          border-radius: 1rem;
+        }
       }
     }
   }

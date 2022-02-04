@@ -52,7 +52,6 @@ export const CardPrice = styled.div`
     li {
       margin-top: 1rem;
 
-      font-family: Roboto, sans-serif;
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.2rem;
@@ -67,7 +66,6 @@ export const CardPrice = styled.div`
     margin: 2rem 0 3rem;
 
     span {
-      font-family: Roboto, sans-serif;
       font-weight: 700;
       font-size: 1.5rem;
       line-height: 1.2rem;
