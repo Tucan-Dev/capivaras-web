@@ -3,7 +3,7 @@ import { ButtonCallToAction } from "../../styles/commonStyles";
 
 import { Container } from "./styles";
 
-import ImgHeader from "../../assets/images/header.svg";
+import ImgHeader from "../../assets/images/modelo_1.png";
 
 import React from "react";
 import { Link } from "react-scroll";
@@ -12,32 +12,34 @@ export function Header() {
   return (
     <Container id="home">
       <div className="content">
+        <div>
+          <Image
+            src={ImgHeader}
+            alt="Picture of the author"
+            objectFit="contain"
+            width={600}
+            height={750}
+          />
+        </div>
+
         <section>
-          <h1>
-            O sistema completo para o controle e atendimento do seu delivery
-          </h1>
-          <p>Modernize seu atendimento com o nosso sistema</p>
+          <h1>Uma nova perspectiva de sistema para o seu delivery</h1>
+          <p>
+            Modernize seu atendimento com o nosso sistema completo para o
+            controle, gestão e atendimento do seu estabelecimento
+          </p>
 
-          <ButtonCallToAction>
-            <Link
-              activeClass="active"
-              to="recursos"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <a>Conheça agora!</a>
-            </Link>
-          </ButtonCallToAction>
+          <Link
+            activeClass="active"
+            to="recursos"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <a>Saiba mais!</a>
+          </Link>
         </section>
-
-        <Image
-          src={ImgHeader}
-          alt="Picture of the author"
-          objectFit="cover"
-          layout="responsive"
-        />
       </div>
     </Container>
   );

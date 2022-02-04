@@ -26,6 +26,7 @@ export function Dashboard({ children, title }: DashboardProps) {
           </button>
         </Content>
       </Container>
+
       <Content>
         <ul>
           <li>
@@ -78,6 +79,7 @@ export function Dashboard({ children, title }: DashboardProps) {
           </li>
         </ul>
       </Content>
+
       <ContentPage>{children}</ContentPage>
     </>
   );

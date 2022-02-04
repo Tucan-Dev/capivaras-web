@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  margin: 4rem auto;
+  max-width: 1144px;
+`;
+
 export const ContainerCard = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+
+  margin-top: 2rem;
 
   @media (max-width: 426px) {
     display: flex;

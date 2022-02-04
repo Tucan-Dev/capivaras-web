@@ -4,7 +4,11 @@ import { useForm } from "react-hook-form";
 
 import Router from "next/router";
 import { Dashboard } from "../../../components/Layout/dashboard";
-import { ContentDefault, TitlePage } from "../../../styles/commonStyles";
+import {
+  ContentDefault,
+  FormContact,
+  TitlePage,
+} from "../../../styles/commonStyles";
 import { Form } from "../../../styles/pages/pagesDash";
 
 interface IFormInputs {
@@ -43,7 +47,7 @@ export default function Support() {
           <p>Entre em contato com a gente se existir qualquer dúvida</p>
         </TitlePage>
         <main>
-          <Form onSubmit={handleSubmit(handleMessageSupport)}>
+          <FormContact onSubmit={handleSubmit(handleMessageSupport)}>
             <div>
               <label>Nome</label>
               <input {...register("name")} placeholder="Nome completo" />
@@ -65,8 +69,8 @@ export default function Support() {
               />
             </div>
 
-            <button>Enviar</button>
-          </Form>
+            <button type="submit">Enviar</button>
+          </FormContact>
         </main>
       </ContentDefault>
     </Dashboard>

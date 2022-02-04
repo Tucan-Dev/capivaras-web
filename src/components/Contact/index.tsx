@@ -6,12 +6,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import Image from "next/image";
 
-import { ContainerDefault } from "../../styles/commonStyles";
 import { Title } from "../Title";
 
-import ImgContact from "../../assets/images/contact.svg";
+import ImgContact from "../../assets/images/modelo_3.png";
 import { Container } from "./styles";
-import { Fade, Slide } from "react-awesome-reveal";
+import { FormContact } from "../../styles/commonStyles";
 
 interface IFormInputs {
   name: string;
@@ -21,8 +20,11 @@ interface IFormInputs {
 
 const schema = yup
   .object({
-    name: yup.string().required(),
-    email: yup.string().email().required(),
+    name: yup.string().required("O campo nome é obrigatório"),
+    email: yup
+      .string()
+      .email("O e-mail é inválido")
+      .required("O campo e-mail é obrigatório"),
     message: yup.string().required(),
   })
   .required();
@@ -39,39 +41,43 @@ export function Contact() {
   const onSubmit = (data: IFormInputs) => console.log(data);
 
   return (
-    <ContainerDefault id="contact">
+    <div id="contact">
       <Title title="Alguma dúvida? Mande uma mensagem para nós!" />
 
-      <Fade delay={100}>
-        <Container>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div>
-              <label>Nome</label>
-              <input {...register("name")} placeholder="Nome completo" />
-              <p>{errors.name?.message}</p>
-            </div>
+      <Container>
+        <FormContact onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <label>Nome</label>
+            <input {...register("name")} placeholder="Nome completo" />
+            <p>{errors.name?.message}</p>
+          </div>
 
-            <div>
-              <label>E-mail</label>
-              <input {...register("email")} placeholder="Seu melhor e-mail" />
-              <p>{errors.email?.message}</p>
-            </div>
+          <div>
+            <label>E-mail</label>
+            <input {...register("email")} placeholder="Seu melhor e-mail" />
+            <p>{errors.email?.message}</p>
+          </div>
 
-            <div>
-              <label>Messagem</label>
-              <textarea
-                rows={10}
-                {...register("message")}
-                placeholder="Digite sua mensagem aqui"
-              />
-            </div>
+          <div>
+            <label>Mensagem</label>
+            <textarea
+              rows={10}
+              {...register("message")}
+              placeholder="Digite sua mensagem aqui"
+            />
+          </div>
 
-            <button>Enviar</button>
-          </form>
+          <button type="submit">Enviar</button>
+        </FormContact>
 
-          <Image src={ImgContact} width={570} height={460} alt="Contato" />
-        </Container>
-      </Fade>
-    </ContainerDefault>
+        <div className="image">
+          <Image
+            src={ImgContact}
+            alt="Picture of the author"
+            objectFit="contain"
+          />
+        </div>
+      </Container>
+    </div>
   );
 }

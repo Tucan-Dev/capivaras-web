@@ -1,73 +1,98 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 
 import Image from "next/image";
 
-import { ContainerDefault } from "../../styles/commonStyles";
-import { Content } from "./styles";
+import { Container, Content } from "./styles";
 
 import { Title } from "../Title";
 
-import ImgCardapio from "../../assets/images/cardapio.svg";
-import ImgEstabelecimento from "../../assets/images/estabelecimento.svg";
-import ImgCelular from "../../assets/images/celular.svg";
+import modelo_2 from "../../assets/images/modelo_2.png";
+
+import icon_1 from "../../assets/images/icon_1.png";
+import icon_2 from "../../assets/images/icon_2.png";
+import icon_3 from "../../assets/images/icon_3.png";
+import icon_4 from "../../assets/images/icon_4.png";
 
 export function Main() {
   return (
-    <ContainerDefault id="recursos">
+    <Container id="recursos">
       <Title title="Tudo o que você precisa para fazer seu delivery crescer" />
+      <Content>
+        <section>
+          <div>
+            <Image
+              src={icon_1}
+              alt="Picture of the author"
+              objectFit="contain"
+            />
+            <h2>Sistema de gestão completo</h2>
+            <ul>
+              <li>Painel de pedidos centralizado</li>
+              <li>
+                Filtro de pedidos por status, data, bairro e forma de pagamento
+              </li>
+              <li>Cadastro de clientes com múltiplos telefones e endereços</li>
+              <li>
+                Impressão do pedido por entrega, retirada ou consumo local
+              </li>
+            </ul>
+          </div>
 
-      <Fade cascade delay={100}>
-        <Content>
+          <div>
+            <Image
+              src={icon_2}
+              alt="Picture of the author"
+              objectFit="contain"
+            />
+            <h2>Cadastre seu estabelecimento</h2>
+            <ul>
+              <li>Cadastre seu estabelecimento para ser visto.</li>
+              <li>
+                Cadastre seus produtos informe seus horários de atendimento,
+                defina as taxas de entrega e formas de pagamento aceitas.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <Image
+              src={icon_3}
+              alt="Picture of the author"
+              objectFit="contain"
+            />
+            <h2>Atendimento automatizado</h2>
+            <ul>
+              <li>Seu cliente é atendido em segundos.</li>
+              <li>
+                Interpreta e responde as principais dúvidas dos clientes no
+                whatsapp.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <Image
+              src={icon_4}
+              alt="Picture of the author"
+              objectFit="contain"
+            />
+            <h2>Múltiplos atendentes</h2>
+            <ul>
+              <li>Gerencie seus cargos</li>
+              <li>Controle de permissão de cargos</li>
+              <li>Controle de acesso por cargos</li>
+            </ul>
+          </div>
+        </section>
+
+        <div className="image">
           <Image
-            src={ImgCardapio}
-            alt="cardápio digital"
-            height={300}
-            width={300}
+            src={modelo_2}
+            alt="Picture of the author"
+            objectFit="contain"
           />
-
-          <div className="text">
-            <h1>Sistema de gestão completo</h1>
-            <p>- Painel de pedidos centralizadoo</p>
-            <p>- Cadastro de clientes com múltiplos telefones e endereços.</p>
-            <p>- Impressão do pedido por entrega, retirada ou consumo local.</p>
-            <p>
-              - Filtro de pedidos por status, data, bairro e forma de pagamento.
-            </p>
-          </div>
-        </Content>
-  
-        <Content className="reversed">
-          <Image
-            src={ImgEstabelecimento}
-            alt="estabelecimento"
-            height={340}
-            width={300}
-          />
-
-          <div className="text">
-            <h1>Cadastre seu estabelecimento</h1>
-            <p>- Cadastre seu estabelecimento para ser visto.</p>
-            <p>
-              - Cadastre seus produtos informe seus horários de atendimento,
-              defina as taxas de entrega e formas de pagamento aceitas.
-            </p>
-          </div>
-        </Content>
-    
-        <Content>
-          <Image src={ImgCelular} alt="celular" height={350} width={300} />
-
-          <div className="text">
-            <h1>Atendimento automatizado</h1>
-            <p>- Seu cliente é atendido em segundos.</p>
-            <p>
-              - Interpreta e responde as principais dúvidas dos clientes no
-              whatsapp.
-            </p>
-          </div>
-        </Content>
-      </Fade>
-    </ContainerDefault>
+        </div>
+      </Content>
+    </Container>
   );
 }

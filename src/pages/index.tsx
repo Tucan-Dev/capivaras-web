@@ -8,8 +8,7 @@ import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Price } from "../components/Prices";
-
-import { Container } from "../styles/home.styles";
+import { Container } from "../styles/pages/home.styles";
 
 export default function Home() {
   return (
@@ -21,11 +20,9 @@ export default function Home() {
       <Navbar />
       <Header />
       <Main />
-      <About />
       <Price />
       <Contact />
       <Footer />
-      
     </Container>
   );
 }

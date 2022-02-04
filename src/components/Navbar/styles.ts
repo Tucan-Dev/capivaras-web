@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--white);
+
   padding: 0.5rem 1rem 1rem;
   display: flex;
   justify-content: center;
@@ -21,26 +22,11 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--white);
+  color: var(--title);
 
   .logo {
+    font-size: 1.25rem;
     padding: 1rem 0;
-  }
-
-  @media (min-width: 769px) {
-    li.action {
-      margin-left: 1rem;
-
-      border: 1px solid;
-      border-radius: 0 0 1rem 1rem;
-      border-top: none;
-
-      transition: all 0.2s;
-
-      &:hover {
-        background-color: var(--secondary);
-      }
-    }
   }
 `;
 
@@ -55,11 +41,11 @@ export const Ul = styled.ul<UlProps>`
   z-index: 100;
 
   li {
-    padding: 18px 10px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
 
     a {
-      color: var(--white);
+      color: var(--title);
       transition: color 0.2s;
 
       &:hover {
@@ -70,7 +56,7 @@ export const Ul = styled.ul<UlProps>`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: var(--primary);
+    background-color: var(--white);
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
@@ -84,7 +70,7 @@ export const Ul = styled.ul<UlProps>`
     li {
       padding: 18px 10px;
       a {
-        color: var(--white);
+        color: var(--title);
         transition: filter 0.2s;
 
         &:hover {
@@ -113,7 +99,7 @@ export const StyledBurger = styled.div<UlProps>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#fff" : "#fff")};
+    background-color: ${({ open }) => (open ? "#FF3737" : "#FD391E")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

@@ -4,26 +4,14 @@ export const ContainerDefault = styled.div`
   width: 100%;
   max-width: 1144px;
   margin: 0 auto;
-
-  padding: 1rem;
 `;
 
 export const TitleContent = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  margin: 0 auto 3rem;
-  width: 100%;
-  max-width: 770px;
-
-  text-align: center;
-
   h1 {
     color: var(--title);
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
   }
 
   @media (max-width: 426px) {
@@ -32,23 +20,6 @@ export const TitleContent = styled.div`
       font-size: 1.5rem;
       font-weight: 700;
     }
-  }
-`;
-export const ButtonCallToAction = styled.button`
-  background: transparent;
-  border: 1px solid var(--white);
-  border-radius: 0.5rem;
-
-  padding: 0.5rem 1rem;
-
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 500;
-
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
   }
 `;
 
@@ -64,7 +35,7 @@ export const Splash = styled.div`
 export const ButtonCard = styled.button`
   border: 0;
   border-radius: 0.5rem;
-  background-color: var(--primary);
+  background-color: var(--success);
 
   color: var(--white);
 
@@ -142,6 +113,71 @@ export const ButtonLink = styled.div<ButtonProps>`
     border-radius: 1rem;
 
     color: var(--white);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+`;
+
+export const FormContact = styled.form`
+  flex: 1;
+  max-width: 475px;
+
+  margin-bottom: 1rem;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--paragraph);
+      margin-bottom: 0.5rem;
+      margin-left: 1rem;
+    }
+
+    input {
+      height: 3rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.5rem 1rem;
+
+      border: 1px solid var(--paragraph);
+      border-radius: 1rem;
+      max-width: 475px;
+      resize: none;
+    }
+
+    p {
+      margin-top: 0.25rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: var(--danger);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    height: 3rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    background-color: var(--success);
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 500;
 
     transition: filter 0.2s;
 

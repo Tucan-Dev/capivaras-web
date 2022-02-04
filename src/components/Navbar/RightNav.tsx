@@ -9,19 +9,6 @@ export function RightNav({ open }: any) {
       <li>
         <Link
           activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <a>Home</a>
-        </Link>
-      </li>
-
-      <li>
-        <Link
-          activeClass="active"
           to="recursos"
           spy={true}
           smooth={true}
@@ -45,7 +32,7 @@ export function RightNav({ open }: any) {
         </Link>
       </li>
 
-      <li className="action">
+      <li>
         <Link
           activeClass="active"
           to="contact"
@@ -57,7 +44,6 @@ export function RightNav({ open }: any) {
           <a>Fale conosco</a>
         </Link>
       </li>
-      
     </Ul>
   );
 }
