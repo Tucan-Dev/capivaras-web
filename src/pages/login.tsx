@@ -4,11 +4,10 @@ import { useForm } from "react-hook-form";
 
 import Link from "next/link";
 
-import ClipLoader from "react-spinners/ClipLoader";
-
 import { ContainerAuth, ContentAuth } from "../styles/pages/auth";
 import { Form } from "../styles/pages/pagesDash";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../contexts/authContext";
 
 interface IFormInputs {
   email: string;
@@ -26,8 +25,6 @@ const schema = yup
   .required();
 
 export default function SignIn() {
-  const [isLogging, setLogging] = useState(false);
-
   const {
     register,
     handleSubmit,
@@ -36,11 +33,20 @@ export default function SignIn() {
     resolver: yupResolver(schema),
   });
 
-  const handleSignIn = (data: IFormInputs) => {
-    setLogging(true);
-    console.log(data);
-    alert("Entrando");
-  };
+  const { signIn } = useContext(AuthContext);
+  async function handleSignIn(data: IFormInputs) {
+    try {
+      await signIn(data);
+    } catch (err: any) {
+      if (err.message === "Request failed with status code 401") {
+        alert("Usuário não autorizado!");
+      } else if (err.message === "Request failed with status code 500") {
+        alert("Erro na requisição da api");
+      } else {
+        alert(err.message);
+      }
+    }
+  }
   return (
     <ContainerAuth>
       <ContentAuth>
@@ -74,9 +80,7 @@ export default function SignIn() {
               </Link>
             </div>
 
-            <button type="submit">
-              {isLogging ? <ClipLoader color="#fff" /> : "Entrar"}
-            </button>
+            <button type="submit">Entrar</button>
           </Form>
         </main>
       </ContentAuth>

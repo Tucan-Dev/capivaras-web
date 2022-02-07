@@ -1,5 +1,9 @@
+import { getCookie } from "cookies-next";
+import { GetServerSideProps } from "next";
 import Link from "next/link";
+import { parseCookies } from "nookies";
 import { Dashboard } from "../../../components/Layout/dashboard";
+import { getAPIClient } from "../../../services/axios";
 import {
   ContentDefault,
   TitlePage,
@@ -9,6 +13,7 @@ import {
 import { Main } from "../../../styles/pages/pagesDash";
 
 export default function Company() {
+  // alert(token);
   return (
     <Dashboard title="Empresa">
       <ContentDefault>
@@ -69,3 +74,21 @@ export default function Company() {
     </Dashboard>
   );
 }
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { ["capivaras_token"]: token } = parseCookies(ctx);
+
+  const apiClient = getAPIClient(ctx);
+
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+};

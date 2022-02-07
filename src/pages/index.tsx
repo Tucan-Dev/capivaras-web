@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import { Navbar } from "../components/Navbar/Navbar";
 import { Main } from "../components/Main";
-import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";

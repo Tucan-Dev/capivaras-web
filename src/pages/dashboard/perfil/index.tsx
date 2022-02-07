@@ -1,5 +1,15 @@
+import { GetServerSideProps } from "next";
 import Link from "next/link";
-import { Dashboard } from "../../../components/Layout/dashboard";
+
+import { useContext, useEffect } from "react";
+
+import { parseCookies } from "nookies";
+
+import { api } from "../../../services/api";
+import { getAPIClient } from "../../../services/axios";
+
+import { AuthContext } from "../../../contexts/authContext";
+
 import {
   ContentDefault,
   TitlePage,
@@ -7,8 +17,20 @@ import {
   ButtonLink,
 } from "../../../styles/commonStyles";
 import { Main } from "../../../styles/pages/pagesDash";
+import { Dashboard } from "../../../components/Layout/dashboard";
 
 export default function Settings() {
+  // useEffect(() => {
+  //   api
+  //     .get("/user/1")
+  //     .then((res: any) => {
+  //       console.log(res);
+  //     })
+  //     .catch((err: any) => {
+  //       console.log(err.message);
+  //     });
+  // }, []);
+
   return (
     <Dashboard title="Configurações">
       <ContentDefault>
@@ -51,3 +73,22 @@ export default function Settings() {
     </Dashboard>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { ["capivaras_token"]: token } = parseCookies(ctx);
+
+  const apiClient = getAPIClient(ctx);
+
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+};
